@@ -23,9 +23,12 @@ Los scripts o módulos de infraestructura se construyeron con terraform y tienen
 
   -	Eks-node-group.tf: Configuración de el grupo de maquinas o nodos que estarán disponibles para utilizar por el clúster (EKS), en el     cual se requieren los permisos creados en el módulo anterior.
 
-  -	Helm.tf: Despliegue de contenedores que nos facilitaran las siguientes herramientas: \n
+  -	Helm.tf: Despliegue de contenedores que nos facilitaran las siguientes herramientas:
+  
       > Jenkins
+      
       > Sonarqube
+      
   A las cuales se les especifica la regla de ingress (Host y servicio al que apuntará), según corresponda.
   Además, el contenedor “nginx-ingress” el cual funcionará como balanceador y actuará por medio de las reglas de ingress configuradas     anteriormente reglas de ingress.
 
