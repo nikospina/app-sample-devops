@@ -45,7 +45,12 @@ Una vez realizado el "apply" terraform mostrara en la consola los recursos que s
 
 Una vez haya terminado, revisar la infraestructura en su consola de AWS y la configuración del cluster EKS.
 
-Para conectarse al cluster de kuberne
+Para conectarse al cluster de kubernetes debe ejecutar el seguiente comando reemplazando variables:
 
+    aws eks --region $REGION update-kubeconfig --name $CLUSTER_NAME
+
+# Configuración de Jenkins
+
+Para configurar Jenkins
 
 
